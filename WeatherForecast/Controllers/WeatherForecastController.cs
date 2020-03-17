@@ -35,5 +35,11 @@ namespace WeatherForecast.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("/")]
+        public ObjectResult Ping()
+        {
+            return Ok("Gelukt");
+        }
     }
 }
